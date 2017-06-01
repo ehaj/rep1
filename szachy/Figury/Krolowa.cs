@@ -16,7 +16,7 @@ namespace szachy.Figury
         }
         public virtual bool CzyMoznaPrzesunac(Pozycja nowaPozycja)
         {
-            return CzySkos(nowaPozycja);
+            return CzyPionowo(nowaPozycja) || CzyPoziomo(nowaPozycja) || CzySkos(nowaPozycja);
         }
     }
 }
