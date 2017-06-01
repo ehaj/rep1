@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace szachy.Figury
 {
-    abstract class Figura
+    class Figura
     {
         protected Pozycja pozycja = null;
         protected Pozycja Pozycja
