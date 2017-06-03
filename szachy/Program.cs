@@ -15,11 +15,12 @@ namespace szachy
             Pozycja p2 = new Pozycja("D4");
             Figura f = new Pionek(p, Kolor.KOLOR_BIALY);
             Console.WriteLine(f.CzyMoznaPrzesunac(p2));
+            PrzesunietoFigure=InfoOPresunieciu;
         }
         
         static void InfoOPrzesunieciu()
         {
-            return Console.Writeline('Przesunięto figurę");
+            Console.Writeline('Przesunięto figurę");
         }
     }
 }
