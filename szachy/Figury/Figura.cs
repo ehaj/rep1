@@ -16,6 +16,9 @@ namespace szachy.Figury
                 return pozycja;
             }
         }
+        public delegate void EventHandler(Object sender, EventArgs e);
+        public event EventHandler PrzesunietoFigure;
+        public event EventHandler PrzesunietoFigure;
         public string kolor;
         protected bool CzyPionowo(Pozycja nowaPozycja)
         {
