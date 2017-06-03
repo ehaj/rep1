@@ -16,6 +16,7 @@ namespace szachy
             Figura f = new Pionek(p, Kolor.KOLOR_BIALY);
             Console.WriteLine(f.CzyMoznaPrzesunac(p2));
             PrzesunietoFigure=InfoOPresunieciu;
+            szachownica.IleFigur();
         }
         
         static void InfoOPrzesunieciu()
