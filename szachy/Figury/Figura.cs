@@ -18,7 +18,6 @@ namespace szachy.Figury
         }
         public delegate void EventHandler;
         public event EventHandler PrzesunietoFigure;
-        public event EventHandler PrzesunietoFigure;
         public string kolor;
         protected bool CzyPionowo(Pozycja nowaPozycja)
         {
