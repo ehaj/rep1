@@ -16,7 +16,7 @@ namespace szachy.Figury
                 return pozycja;
             }
         }
-        public delegate void EventHandler(Object sender, EventArgs e);
+        public delegate void EventHandler;
         public event EventHandler PrzesunietoFigure;
         public event EventHandler PrzesunietoFigure;
         public string kolor;
