@@ -23,14 +23,17 @@ namespace szachy.Figury
         protected bool CzyPionowo(Pozycja nowaPozycja)
         {
             return Pozycja.Y == nowaPozycja.Y;
+            InfoOPrzesunieciu();
         }
         protected bool CzyPoziomo(Pozycja nowaPozycja)
         {
             return Pozycja.X == nowaPozycja.X;
+            InfoOPrzesunieciu();
         }
         protected bool CzySkos(Pozycja nowaPozycja)
         {
             return Math.Abs(Pozycja.Y - nowaPozycja.Y) == Math.Abs(Pozycja.X - nowaPozycja.X);
+             InfoOPrzesunieciu();
         }
         public virtual bool CzyMoznaPrzesunac(Pozycja nowaPozycja)
         {
