@@ -21,7 +21,7 @@ namespace szachy.Figury
         protected bool CzyPionowo(Pozycja nowaPozycja)
         {
             return Pozycja.Y == nowaPozycja.Y;
-            PrzesunietoFigure();
+            PrzesunietoFigure;
         }
         protected bool CzyPoziomo(Pozycja nowaPozycja)
         {
