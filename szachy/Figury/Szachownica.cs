@@ -26,5 +26,9 @@ namespace szachy.Figury
                 plansza[x - 65, y] = value;
             }
         }
+         public int ileFigur()
+        {
+            return Figury.Count;
+        }
     }
 }
