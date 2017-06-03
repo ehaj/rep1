@@ -16,23 +16,22 @@ namespace szachy.Figury
                 return pozycja;
             }
         }
-        public delegate void EventHandler;
         public event EventHandler PrzesunietoFigure;
         public string kolor;
         protected bool CzyPionowo(Pozycja nowaPozycja)
         {
             return Pozycja.Y == nowaPozycja.Y;
-            InfoOPrzesunieciu();
+            PrzesunietoFigure;
         }
         protected bool CzyPoziomo(Pozycja nowaPozycja)
         {
             return Pozycja.X == nowaPozycja.X;
-            InfoOPrzesunieciu();
+            PrzesunietoFigure;
         }
         protected bool CzySkos(Pozycja nowaPozycja)
         {
             return Math.Abs(Pozycja.Y - nowaPozycja.Y) == Math.Abs(Pozycja.X - nowaPozycja.X);
-             InfoOPrzesunieciu();
+            PrzesunietoFigure;
         }
         public virtual bool CzyMoznaPrzesunac(Pozycja nowaPozycja)
         {
