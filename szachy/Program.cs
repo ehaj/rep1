@@ -16,5 +16,10 @@ namespace szachy
             Figura f = new Pionek(p, Kolor.KOLOR_BIALY);
             Console.WriteLine(f.CzyMoznaPrzesunac(p2));
         }
+        
+        static void InfoOPrzesunieciu()
+        {
+            return Console.Writeline('Przesunięto figurę");
+        }
     }
 }
