@@ -23,5 +23,37 @@ namespace szachy
         {
             Console.Writeline('Przesunięto figurę");
         }
+
+        sealed class Toolbox {
+            private static SomeOtherClass Szachownica = new SomeOtherClass1();
+            private Toolbox() {
+            }
+            static Toolbox() {
+            }
+            public static SomeOtherClass SomeOtherClass1Instance {
+                get {
+                return Szachownica;
+                }
+            }
+        }
+
+        public abstract class Figura {
+            public static Figura FiguraFactory(String figuraType) {
+                switch (figuraType) {
+                    case "Goniec":
+                    return new GoniecFigura();
+                    case "Pion":
+                    return new PionFigura();
+                    case "Krol":
+                    return new KrolFigura();
+                    case "Krolowa":
+                    return new KrolowaFigura();
+                    default:
+                    break;
+                }
+            throw new System.NotSupportedException("The Figura type " + figuraType + " is not recognized.");
+            }
+        }
+
     }
 }
